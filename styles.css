@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div h2 {
+  font-size: 40px;
+  font-family: "roboto";
+  color: rgb(255, 0, 0);
+}
+
+header div a {
+  font-size: 1.1em;
+  text-decoration: none;
+  font-family: "lato";
+  color: rgb(151, 160, 168);
+  margin-left: 25px;
+}
+
+header div a:hover {
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.back-image {
+  font-size: 18px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(./imgs/joker.jpg);
+  min-height: 30.5em;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.back-image .contenedor {
+  margin: 0 auto;
+  margin-bottom: 4.5em;
+}
+
+.back-image h1 {
+  font-size: 3.6em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.back-image .descripccion {
+  max-width: 50%;
+  line-height: 1.5em;
+  margin: 0.5em 0;
+  color: aliceblue;
+  margin: 1.7em 0;
+}
+.back-image .boton {
+  border: none;
+  padding: 1em 0;
+  padding-right: 1em;
+  border-radius: 0.4em;
+  background-color: #ff0000;
+  color: #fff;
+  margin-right: 0.6em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.boton i {
+  margin: 0 1em;
+}
+
+.back-image .boton:hover {
+  color: #fff;
+  background-color: rgba(100, 100, 100, 0.507);
+  transform: scale(1.07);
+  transform-origin: center;
+}
+
+/* ------------------------SUGGEST SECTION ----------------------------------*/
+.hover{
+  transition: ease all .45s;
+transform: scale(1.2);
+transform-origin: center;
+cursor: pointer;
+}
+
+.suggestSection{
+  margin-top: 2.5em ; 
+  
+}
+.suggestIndicators button {
+  background-color: rgba(255, 255, 255, 0.37);
+  height: 0.4em;
+  width: 1em;
+  border: none;
+  margin: 0 0.2em;
+}
+
+.suggestIndicators button.active {
+  background-color: #ff0000;
+}
+.suggestTitle{
+  color: #fff;
+font-family: 'roboto';
+}
+
+.suggestUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.suggestMain{
+display: flex;
+
+position: relative;
+}
+
+.leftArrow,
+.rightArrow{
+  position: absolute;
+  font-size: 2em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#FFF;
+  padding: 0.1em;
+  height: 30%;
+  top: calc(50% - 15%);
+}
+
+.rightArrow{
+  right: 0;
+}
+
+.carousel{
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 2em 0;
+  
+}
+
+.carouselFilm{
+  min-width: 20%;
+ 
+}
+.carouselFilm img{
+  width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------MEDIA QUERIES  --------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+  body{
+    font-size: 14px;
+  }
+  
+  .header  {
+    flex-direction: column;
+  }
+  nav {
+    width: 45%;
+   padding: 2em 0;
+    margin: auto;
+    line-height: 3.5em;
+  }
+ .header nav a {
+    font-size: 1.5em;
+  }
+
+  .back-image{
+    background-position: center center;
+  }
+}
